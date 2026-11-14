@@ -1,0 +1,117 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex"><style>#nl-badge-frame,iframe[id^="nl-badge"]{display:none!important}[hidden]{display:none!important}*,*::before,*::after{box-sizing:border-box}img{max-width:100%}html{-webkit-text-size-adjust:100%}</style></head><body style="margin:0"><title>İrem & Atilla Davetiye</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Pinyon+Script&display=swap">
+<style>
+/* Tek, bilinçli koyu dünya: bordo zemin, krem yazı (davetiyenin kendi paleti) — tema bloğu yok, tüm renkler açık. */
+:root{
+  --zemin:#1d0509; --kart:#2a0a10; --krem:#f4e9d6; --soluk:rgba(244,233,214,.66); --cizgi:rgba(244,233,214,.16); --vurgu:#e8b9a6; --koyu:#3a0d15;
+  --serif:'EB Garamond',Georgia,'Times New Roman',serif; --el:'Pinyon Script','Snell Roundhand','Apple Chancery',cursive;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--zemin);color:var(--krem);font:17px/1.5 var(--serif);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 60px}
+.ust{text-align:center;padding-block:52px 26px;max-width:620px;margin:0 auto}
+.ust h1{font:400 clamp(48px,13vw,72px)/1 var(--el);margin:0;text-wrap:balance}
+.ust h1 .amp{font-family:var(--serif);font-size:.6em;vertical-align:.08em;padding:0 .04em}
+.ust .k{letter-spacing:.3em;font-size:12px;text-transform:uppercase;color:var(--soluk);margin-top:14px}
+.ust p{margin:22px auto 0;color:var(--soluk);max-width:34em}
+.ayrac{width:46px;height:1px;background:var(--cizgi);margin:26px auto 0}
+section{max-width:620px;margin:0 auto;padding-block:34px 6px}
+section.genis{max-width:980px}
+h2{font:400 40px/1.1 var(--el);margin:0 0 4px;text-align:center;text-wrap:balance}
+.not{text-align:center;color:var(--soluk);font-size:15px;margin:0 0 22px}
+.kartlar{display:grid;gap:36px}
+.genis .kartlar{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 14px}
+@media(min-width:760px){.genis .kartlar{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.kart{margin:0;min-width:0}
+.medya{position:relative;width:100%;max-width:100%;background:#12040a;border-radius:3px;overflow:hidden;box-shadow:0 14px 36px rgba(0,0,0,.45);cursor:zoom-in;border:0;padding:0;display:block}
+.medya img,.medya video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.medya:focus-visible{outline:2px solid var(--vurgu);outline-offset:4px}
+.kart.secili .medya{outline:2px solid var(--vurgu);outline-offset:4px}
+.rozet{position:absolute;left:8px;bottom:8px;font:13px var(--serif);color:var(--krem);background:rgba(29,5,9,.66);border:1px solid var(--cizgi);border-radius:20px;padding:3px 10px 4px}
+.alt{display:flex;align-items:flex-start;gap:10px;padding-top:12px}
+.alt .y{flex:1;min-width:0}
+.no{font:13px var(--serif);color:var(--vurgu);letter-spacing:.06em}
+.ad{font-size:19px;line-height:1.2}
+.ac{font-size:14.5px;color:var(--soluk);margin-top:3px}
+.genis .ad{font-size:16px}
+.kalp{flex:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--cizgi);background:transparent;color:var(--krem);display:grid;place-items:center;cursor:pointer;padding:0;transition:background .2s,border-color .2s}
+.kalp:focus-visible{outline:2px solid var(--vurgu);outline-offset:2px}
+.kalp svg{width:20px;height:20px}.kalp path{fill:none;stroke:currentColor;stroke-width:1.6}
+.secili .kalp{background:var(--vurgu);border-color:var(--vurgu);color:var(--koyu)}.secili .kalp path{fill:currentColor}
+.cubuk{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:center;pointer-events:none;
+  padding:14px max(16px,env(safe-area-inset-right,0px)) calc(14px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));
+  background:linear-gradient(rgba(29,5,9,0),rgba(29,5,9,.94) 34%)}
+.cubuk button{pointer-events:auto;font:17px var(--serif);color:var(--koyu);background:var(--krem);border:0;border-radius:40px;padding:14px 26px;box-shadow:0 8px 24px rgba(0,0,0,.4);cursor:pointer;width:min(320px,100%)}
+.cubuk button:disabled{background:rgba(244,233,214,.22);color:var(--soluk);box-shadow:none;cursor:default}
+.perde{position:fixed;inset:0;background:rgba(10,1,4,.95);display:flex;align-items:center;justify-content:center;z-index:9;
+  padding:calc(16px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(16px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.perde .ic{width:100%;height:100%;display:flex;align-items:center;justify-content:center}
+.perde video,.perde img{max-width:100%;max-height:100%;display:block;object-fit:contain}
+.kapat{position:absolute;top:calc(10px + env(safe-area-inset-top,0px));right:calc(12px + env(safe-area-inset-right,0px));width:44px;height:44px;border-radius:50%;border:1px solid var(--cizgi);background:rgba(29,5,9,.75);color:var(--krem);font-size:22px;cursor:pointer;z-index:2}
+.gonder{position:fixed;inset:0;background:rgba(10,1,4,.9);display:flex;align-items:flex-end;justify-content:center;z-index:10}
+.panel{background:var(--kart);width:100%;max-width:560px;border-radius:14px 14px 0 0;border-top:1px solid var(--cizgi);
+  padding:26px max(20px,env(safe-area-inset-right,0px)) calc(20px + env(safe-area-inset-bottom,0px)) max(20px,env(safe-area-inset-left,0px));max-height:90%;overflow:auto}
+.panel h3{font:400 36px/1 var(--el);margin:0 0 12px;text-align:center}
+.panel ul{list-style:none;margin:0 0 14px;padding:0;color:var(--soluk);font-size:15px}
+.panel li{padding:5px 0;border-bottom:1px solid var(--cizgi)}.panel li b{color:var(--krem);font-weight:400}
+.panel label{display:block;font-size:14px;color:var(--soluk);margin-bottom:6px}
+.panel textarea{width:100%;min-height:84px;background:var(--zemin);color:var(--krem);border:1px solid var(--cizgi);border-radius:6px;padding:10px;font:16px var(--serif);resize:vertical}
+.btns{display:grid;gap:10px;margin-top:14px}
+.btns a,.btns button{font:17px var(--serif);border-radius:40px;padding:13px;border:1px solid var(--cizgi);background:transparent;color:var(--krem);cursor:pointer;text-align:center;text-decoration:none}
+.btns .ana{background:var(--krem);color:var(--koyu);border-color:var(--krem)}
+.ipucu{text-align:center;font-size:13px;color:var(--soluk);margin-top:10px;min-height:1em}
+.bildirim{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--krem);color:var(--koyu);font:15px var(--serif);padding:9px 18px;border-radius:30px;box-shadow:0 8px 24px rgba(0,0,0,.4);opacity:0;transition:opacity .3s;pointer-events:none}
+.bildirim.acik{opacity:1}
+.son{text-align:center;color:var(--soluk);font-size:14px;padding-block:40px 10px;max-width:620px;margin:0 auto}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<header class="ust">
+  <h1>İrem <span class="amp">&amp;</span> Atilla</h1>
+  <div class="k">Nişan davetiyesi · seçenekler</div>
+  <p>Sevgili İrem, hazırladığımız seçenekler aşağıda. Beğendiklerinin kalbine dokunman yeterli (istediğin kadar seçebilirsin); seçimlerin bize kendiliğinden ulaşır. Görsele dokununca büyür.</p>
+  <div class="ayrac"></div>
+</header>
+<main id="ana"></main>
+<form name="secimler" data-netlify="true" netlify-honeypot="bot" hidden><input name="bot"><input name="ziyaretci"><input name="secimler"><input name="adet"></form>
+<div class="bildirim" id="bildirim" aria-live="polite"></div>
+<div class="son">Metinlerdeki saat şimdilik yer tutucu; son hâli seçimine göre netleşecek.</div>
+<div class="perde" id="perde" hidden><button class="kapat" id="pk" type="button" aria-label="Kapat">×</button><div class="ic" id="pi"></div></div>
+<script>
+const VERI=[{"baslik": "Hareketli davetiye", "not_": "Mesajla gönderilecek kısa film; üç farklı zeminle. Dokununca büyük oynar.", "izgara": false, "kartlar": [{"no": 1, "ad": "Zarf & Tül · bordo damask", "alt": "Zarf açılır, tül çıkar; büyük monogram ve yazılar ilmek ilmek işlenir, çerçevesiz.", "oran": "3/4", "video": "medya/konsept1-zarf-tul.mp4?v=1da3f0a2", "poster": "medya/konsept1-zarf-tul-poster.jpg?v=6c4f8caf"}, {"no": 2, "ad": "Zarf & Tül · yalın monogram, şakayık zemin", "alt": "Köşelerinde şakayık olan sade bordo zemin; tülde yalnızca büyük monogram işlenir, çerçevesiz.", "oran": "3/4", "video": "medya/konsept1-zarf-tul-sakayik-sade.mp4?v=ccf26a4a", "poster": "medya/konsept1-zarf-tul-sakayik-sade-poster.jpg?v=4250e23d"}, {"no": 3, "ad": "Zarf & Tül · bordo suluboya", "alt": "Aynı film, elle boyanmış koyu bordo suluboya zemin üzerinde.", "oran": "3/4", "video": "medya/konsept1-zarf-tul-suluboya-bordo.mp4?v=824dd2a8", "poster": "medya/konsept1-zarf-tul-suluboya-bordo-poster.jpg?v=ea0a00ab"}]}, {"baslik": "Işıktan şakayık", "not_": "Aynı hareketli çiçek; yazının yerleşimi ve harf karakteri değişiyor.", "izgara": true, "kartlar": [{"no": 4, "ad": "Eksen, italik serif", "alt": "", "oran": "4/5", "video": "medya/konsept2-sakayik-01.mp4?v=477bd734", "poster": "medya/konsept2-sakayik-01-poster.jpg?v=9e03886a"}, {"no": 5, "ad": "Geniş başlık, “ve” el yazısı", "alt": "", "oran": "4/5", "video": "medya/konsept2-sakayik-02.mp4?v=4092c1a6", "poster": "medya/konsept2-sakayik-02-poster.jpg?v=30024da0"}, {"no": 6, "ad": "Sol sütun, asimetrik", "alt": "", "oran": "4/5", "video": "medya/konsept2-sakayik-03.mp4?v=eeb7b07e", "poster": "medya/konsept2-sakayik-03-poster.jpg?v=92e6c082"}, {"no": 7, "ad": "Zapfino imza", "alt": "", "oran": "4/5", "video": "medya/konsept2-sakayik-04.mp4?v=14a35135", "poster": "medya/konsept2-sakayik-04-poster.jpg?v=0e4b2f85"}, {"no": 8, "ad": "Arkada italik, çapraz", "alt": "", "oran": "4/5", "video": "medya/konsept2-sakayik-05.mp4?v=37afd1bf", "poster": "medya/konsept2-sakayik-05-poster.jpg?v=93072c41"}, {"no": 9, "ad": "Dikey kenar yazıları", "alt": "", "oran": "4/5", "video": "medya/konsept2-sakayik-06.mp4?v=2bc060f8", "poster": "medya/konsept2-sakayik-06-poster.jpg?v=5a06a191"}, {"no": 10, "ad": "Nakış kasnağı", "alt": "", "oran": "4/5", "video": "medya/konsept2-sakayik-07.mp4?v=7bc6b183", "poster": "medya/konsept2-sakayik-07-poster.jpg?v=80a43b0d"}, {"no": 11, "ad": "Herbaryum etiketleri", "alt": "", "oran": "4/5", "video": "medya/konsept2-sakayik-08.mp4?v=6633a7b5", "poster": "medya/konsept2-sakayik-08-poster.jpg?v=f4ad9db7"}, {"no": 12, "ad": "Başlık sayfası", "alt": "", "oran": "4/5", "video": "medya/konsept2-sakayik-09.mp4?v=4f3f384c", "poster": "medya/konsept2-sakayik-09-poster.jpg?v=eda719f6"}, {"no": 13, "ad": "Sağ sütun, “ve” ile", "alt": "", "oran": "4/5", "video": "medya/konsept2-sakayik-10.mp4?v=bf356d7b", "poster": "medya/konsept2-sakayik-10-poster.jpg?v=4eff4534"}]}, {"baslik": "Durağan davetiye", "not_": "Tek kare; mesajla gönderim ya da baskı için.", "izgara": false, "kartlar": [{"no": 14, "ad": "Kiremit bordo · kabartma monogram", "alt": "Kiremit-bordo pamuk kart; ortada ton üstüne ton kabartma monogram, isimler ve yazılar açık pudra tonunda.", "oran": "4/5", "resim": "medya/konsept-i-kirmizi-kabartma.jpg?v=781f628f"}, {"no": 15, "ad": "Kabartma şakayık çerçeve", "alt": "Bordo zemin üzerinde krem pamuk kart, dalgalı kesim kenar; şakayık çerçeve kabartma, yazılar bordo mürekkeple basılı.", "oran": "2/3", "resim": "medya/konsept-h-kabartma.jpg?v=a69bf5e2"}, {"no": 16, "ad": "Rokoko çerçeve · ipek keten", "alt": "Elle çizilmiş rokoko çerçeve ve şakayıklar, bordo mürekkep; ince ipek-keten kumaş.", "oran": "4/5", "resim": "medya/konsept-a-kumas.jpg?v=c6a55a12"}, {"no": 17, "ad": "Rokoko çerçeve · suluboya kağıdı", "alt": "Aynı tasarım, dokulu suluboya kağıdında.", "oran": "4/5", "resim": "medya/konsept-a-suluboya.jpg?v=0402e1a3"}, {"no": 18, "ad": "Rokoko çerçeve · pudra kağıt", "alt": "Aynı tasarım, pudra pembesi pamuk kağıtta.", "oran": "4/5", "resim": "medya/konsept-a-pudra.jpg?v=a5fd46bc"}, {"no": 19, "ad": "Çocukluğunuz · suluboya kağıdı", "alt": "Çocukluk çiziminiz bordo mürekkeple; hafif dokulu suluboya kağıdı.", "oran": "4/5", "resim": "medya/konsept-e-suluboya.jpg?v=bd585342"}, {"no": 20, "ad": "Çocukluğunuz · içe baskı", "alt": "Çocukluk çiziminiz krem pamuk karta içe basılı (deboss); yazılar bordo mürekkeple basılı.", "oran": "4/5", "resim": "medya/konsept-e-kabartma.jpg?v=5f815a61"}, {"no": 21, "ad": "Çocukluğunuz · ipek keten", "alt": "Aynı çizim, ince ipek-keten kumaş üzerinde.", "oran": "4/5", "resim": "medya/konsept-e-kumas.jpg?v=269e1434"}, {"no": 22, "ad": "Çocukluğunuz · pudra kağıt", "alt": "Aynı çizim, pudra pembesi kağıtta.", "oran": "4/5", "resim": "medya/konsept-e-pudra.jpg?v=42a4df10"}, {"no": 23, "ad": "Yağlıboya & dantel", "alt": "Bordo yağlıboya şakayıklar üzerine serilmiş ince tül ve Chantilly dantel; ortada el yapımı fildişi oval kart.", "oran": "4/5", "resim": "medya/konsept-d.jpg?v=41481eb6"}]}, {"baslik": "Monogram · çizimler", "not_": "İ harfinin sekiz çizen hâli; çerçevesiz ya da farklı çerçevelerle.", "izgara": true, "kartlar": [{"no": 24, "ad": "Çerçevesiz", "alt": "", "oran": "2/3", "resim": "medya/monogram-yalin-bordo.jpg?v=120c7153"}, {"no": 25, "ad": "iA, oval kıvrımlı", "alt": "", "oran": "2/3", "resim": "medya/monogram-ia-oval-bordo.jpg?v=17c608da"}, {"no": 26, "ad": "İ, damla uçlu", "alt": "", "oran": "2/3", "resim": "medya/monogram-damla-bordo.jpg?v=14adc404"}, {"no": 27, "ad": "Şakayık dallı çerçeve", "alt": "", "oran": "2/3", "resim": "medya/monogram-sakayik-yazi-01-bordo.jpg?v=36668a55"}, {"no": 28, "ad": "Tek kalem oval", "alt": "", "oran": "2/3", "resim": "medya/monogram-tek-kalem-01-bordo.jpg?v=0ba44010"}, {"no": 29, "ad": "Rokoko oval", "alt": "", "oran": "2/3", "resim": "medya/monogram-rokoko-oval-01-bordo.jpg?v=c88760aa"}, {"no": 30, "ad": "Kaligrafi oval, kalın çerçeve", "alt": "", "oran": "2/3", "resim": "medya/monogram-kaligrafi-oval-02-bordo.jpg?v=e1310158"}]}, {"baslik": "Monogram · malzemede", "not_": "Kartta ve kumaşta nasıl duracağı: varak baskı ve nakış.", "izgara": false, "kartlar": [{"no": 31, "ad": "İ · gül altını varak", "alt": "", "oran": "4/5", "resim": "medya/i-kaligrafi-varak.jpg?v=e99fa757"}, {"no": 32, "ad": "İ · bordo tülde nakış", "alt": "", "oran": "4/5", "resim": "medya/i-kaligrafi-nakis.jpg?v=de9a3ba0"}]}, {"baslik": "Yazı karakteri", "not_": "İsimler için bir gösterişli font, diğer satırlar için ona eşlik eden sade bir font. Beğendiğin eşleşmeyi seç.", "izgara": true, "kartlar": [{"no": 33, "ad": "Pinyon Script + EB Garamond", "alt": "El yazısı", "oran": "1/1", "resim": "medya/01-pinyon-script.jpg?v=44951a44"}, {"no": 34, "ad": "Ballet + Bodoni Moda", "alt": "El yazısı", "oran": "1/1", "resim": "medya/02-ballet.jpg?v=3962d201"}, {"no": 35, "ad": "Imperial Script + Cormorant Garamond", "alt": "El yazısı", "oran": "1/1", "resim": "medya/03-imperial-script.jpg?v=0e48a3aa"}, {"no": 36, "ad": "Great Vibes + Gilda Display", "alt": "El yazısı", "oran": "1/1", "resim": "medya/04-great-vibes.jpg?v=7be9625f"}, {"no": 37, "ad": "Italianno + Cormorant Garamond", "alt": "El yazısı", "oran": "1/1", "resim": "medya/05-italianno.jpg?v=f3e7baea"}, {"no": 38, "ad": "Luxurious Script + EB Garamond", "alt": "El yazısı", "oran": "1/1", "resim": "medya/06-luxurious-script.jpg?v=8e7736cb"}, {"no": 39, "ad": "Snell Roundhand + Iowan Old Style", "alt": "El yazısı", "oran": "1/1", "resim": "medya/07-snell-roundhand.jpg?v=73333291"}, {"no": 40, "ad": "Zapfino + Bodoni Moda", "alt": "El yazısı", "oran": "1/1", "resim": "medya/08-zapfino.jpg?v=d8262e2d"}, {"no": 41, "ad": "Petit Formal Script + EB Garamond", "alt": "El yazısı", "oran": "1/1", "resim": "medya/09-petit-formal-script.jpg?v=375a4bf5"}, {"no": 42, "ad": "Parisienne + Gilda Display", "alt": "El yazısı", "oran": "1/1", "resim": "medya/10-parisienne.jpg?v=ac357410"}, {"no": 43, "ad": "Altesse Std + Bodoni Moda", "alt": "El yazısı", "oran": "1/1", "resim": "medya/11-altesse-std.jpg?v=02e6ba57"}, {"no": 44, "ad": "Bodoni Moda + Bodoni Moda (metin)", "alt": "Serif", "oran": "1/1", "resim": "medya/12-bodoni-moda.jpg?v=77aa5037"}, {"no": 45, "ad": "Bodoni Moda İtalik + Bodoni Moda (metin)", "alt": "Serif", "oran": "1/1", "resim": "medya/13-bodoni-moda-italik.jpg?v=162885a7"}, {"no": 46, "ad": "Chamberi Super Display + EB Garamond", "alt": "Serif", "oran": "1/1", "resim": "medya/14-chamberi-super-display.jpg?v=f93c0de9"}, {"no": 47, "ad": "Nyght Serif + EB Garamond", "alt": "Serif", "oran": "1/1", "resim": "medya/15-nyght-serif.jpg?v=8476424d"}, {"no": 48, "ad": "New York İtalik + New York Small", "alt": "Serif", "oran": "1/1", "resim": "medya/16-new-york-italik.jpg?v=1c808063"}, {"no": 49, "ad": "Big Caslon + EB Garamond", "alt": "Serif", "oran": "1/1", "resim": "medya/17-big-caslon.jpg?v=3b2a443e"}, {"no": 50, "ad": "Cormorant Garamond İtalik + Cormorant Garamond", "alt": "Serif", "oran": "1/1", "resim": "medya/18-cormorant-garamond-italik.jpg?v=b0b237b3"}, {"no": 51, "ad": "EB Garamond İtalik + EB Garamond", "alt": "Serif", "oran": "1/1", "resim": "medya/19-eb-garamond-italik.jpg?v=01f617c0"}, {"no": 52, "ad": "Playfair Display + EB Garamond", "alt": "Serif", "oran": "1/1", "resim": "medya/20-playfair-display.jpg?v=f9c4d589"}, {"no": 53, "ad": "Gilda Display + EB Garamond", "alt": "Serif", "oran": "1/1", "resim": "medya/21-gilda-display.jpg?v=1804704a"}]}];
+const kalp='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.6C1.4 7.3 3.7 4 7.1 4c2 0 3.6 1.1 4.9 2.9C13.3 5.1 14.9 4 16.9 4c3.4 0 5.7 3.3 4.4 6.9-1.8 5-9.3 9.6-9.3 9.6z"/></svg>';
+let secim=new Set();try{secim=new Set(JSON.parse(localStorage.getItem('irem-secim')||'[]'))}catch(e){}
+const kayit=()=>{try{localStorage.setItem('irem-secim',JSON.stringify([...secim]))}catch(e){}};
+const tum={},ana=document.getElementById('ana');
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+VERI.forEach(b=>{const s=document.createElement('section');if(b.izgara)s.className='genis';
+  s.innerHTML=`<h2>${esc(b.baslik)}</h2><p class="not">${esc(b.not_)}</p><div class="kartlar"></div>`;const g=s.querySelector('.kartlar');
+  b.kartlar.forEach(k=>{tum[k.no]=Object.assign({bolum:b.baslik},k);const f=document.createElement('figure');f.className='kart'+(secim.has(k.no)?' secili':'');
+    const med=k.video?`<video muted loop playsinline autoplay preload="none" poster="${k.poster}" data-src="${k.video}"></video>`
+      :`<img alt="${esc(k.ad)}" src="${k.resim}" loading="lazy">`;
+    f.innerHTML=`<button class="medya" type="button" aria-label="${esc(k.ad)} büyüt" style="aspect-ratio:${k.oran}">${med}</button><div class="alt"><div class="y"><div class="no">No. ${k.no}</div><div class="ad">${esc(k.ad)}</div>${k.alt?`<div class="ac">${esc(k.alt)}</div>`:''}</div><button class="kalp" type="button" aria-pressed="${secim.has(k.no)}" aria-label="No. ${k.no} beğen">${kalp}</button></div>`;
+    const kb=f.querySelector('.kalp');
+    kb.onclick=()=>{secim.has(k.no)?secim.delete(k.no):secim.add(k.no);const on=secim.has(k.no);f.classList.toggle('secili',on);kb.setAttribute('aria-pressed',on);kayit();if(typeof bildir==='function'){bildir(on?'Beğendiklerine eklendi':'Çıkarıldı');gonder();}};
+    f.querySelector('.medya').onclick=()=>ac(k);g.appendChild(f);});ana.appendChild(s);});
+const hazirla=v=>{v.muted=true;v.defaultMuted=true;v.playsInline=true;v.setAttribute('muted','');v.setAttribute('playsinline','');v.setAttribute('webkit-playsinline','');};
+const io=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){hazirla(v);if(!v.src){v.src=v.dataset.src;v.load();}const p=v.play();if(p)p.catch(()=>{v.controls=true;});}else v.pause();}),{threshold:.2,rootMargin:'200px 0px'});
+document.addEventListener('touchstart',()=>document.querySelectorAll('.medya video').forEach(v=>{if(v.src&&v.paused){const r=v.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight)v.play().catch(()=>{});}}),{passive:true});
+document.querySelectorAll('.medya video').forEach(v=>io.observe(v));
+const perde=document.getElementById('perde'),pi=document.getElementById('pi');
+function ac(k){pi.innerHTML=k.video?`<video autoplay muted loop playsinline controls poster="${k.poster}" src="${k.video}"></video>`:`<img alt="${esc(k.ad)}" src="${k.resim}">`;perde.hidden=false;document.getElementById('pk').focus();}
+const kapat=()=>{perde.hidden=true;pi.innerHTML='';};
+document.getElementById('pk').onclick=kapat;perde.onclick=e=>{if(e.target===perde||e.target===pi)kapat();};
+addEventListener('keydown',e=>{if(e.key==='Escape')kapat();});
+let zid='';try{zid=localStorage.getItem('irem-zid')||'';if(!zid){zid=Math.random().toString(36).slice(2,10);localStorage.setItem('irem-zid',zid);}}catch(e){zid=Math.random().toString(36).slice(2,10);}
+const bil=document.getElementById('bildirim');let bt=null;
+function bildir(t){bil.textContent=t;bil.classList.add('acik');clearTimeout(bt);bt=setTimeout(()=>bil.classList.remove('acik'),1800);}
+let gt=null;
+function guncelle(){}
+function gonder(){clearTimeout(gt);gt=setTimeout(()=>{const l=[...secim].sort((a,b)=>a-b).filter(n=>tum[n]).map(n=>`No. ${n} · ${tum[n].ad}`);
+  const v=new URLSearchParams({'form-name':'secimler',ziyaretci:zid,adet:String(l.length),secimler:l.join('\n')||'(boş)'});
+  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:v.toString()}).catch(()=>{});},1200);}
+</script>
+</body></html>
