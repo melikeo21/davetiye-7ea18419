@@ -12,7 +12,7 @@
 }
 *{box-sizing:border-box}
 body{background:var(--zemin);color:var(--krem);font:17px/1.5 var(--serif);
-  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 60px}
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 120px}
 .ust{text-align:center;padding-block:52px 26px;max-width:620px;margin:0 auto}
 .ust h1{font:400 clamp(48px,13vw,72px)/1 var(--el);margin:0;text-wrap:balance}
 .ust h1 .amp{font-family:var(--serif);font-size:.6em;vertical-align:.08em;padding:0 .04em}
@@ -64,7 +64,18 @@ h2{font:400 40px/1.1 var(--el);margin:0 0 4px;text-align:center;text-wrap:balanc
 .btns a,.btns button{font:17px var(--serif);border-radius:40px;padding:13px;border:1px solid var(--cizgi);background:transparent;color:var(--krem);cursor:pointer;text-align:center;text-decoration:none}
 .btns .ana{background:var(--krem);color:var(--koyu);border-color:var(--krem)}
 .ipucu{text-align:center;font-size:13px;color:var(--soluk);margin-top:10px;min-height:1em}
-.bildirim{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--krem);color:var(--koyu);font:15px var(--serif);padding:9px 18px;border-radius:30px;box-shadow:0 8px 24px rgba(0,0,0,.4);opacity:0;transition:opacity .3s;pointer-events:none}
+.cubuk{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:center;pointer-events:none;padding:14px max(16px,env(safe-area-inset-right,0px)) calc(14px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:linear-gradient(rgba(29,5,9,0),rgba(29,5,9,.94) 34%)}
+.cubuk button{pointer-events:auto;font:17px var(--serif);color:var(--koyu);background:var(--krem);border:0;border-radius:40px;padding:14px 26px;box-shadow:0 8px 24px rgba(0,0,0,.4);cursor:pointer;width:min(320px,100%)}
+.cubuk button:disabled{background:rgba(244,233,214,.22);color:var(--soluk);box-shadow:none;cursor:default}
+.ozet{position:fixed;inset:0;z-index:11;background:var(--zemin);overflow:auto;padding:calc(56px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(24px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.ozet-ic{max-width:560px;margin:0 auto}
+.ozet h3{font:400 40px/1.1 var(--el);text-align:center;margin:0 0 18px}
+.ozet-izgara{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 10px}
+.ozet-kart img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:3px;display:block}
+.ozet-kart div{font-size:13px;line-height:1.25;margin-top:5px;color:var(--krem)}
+.ozet-kart b{font-weight:400;color:var(--vurgu)}
+.ozet-not{text-align:center;color:var(--soluk);font-size:14px;margin-top:20px}
+.bildirim{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--krem);color:var(--koyu);font:15px var(--serif);padding:9px 18px;border-radius:30px;box-shadow:0 8px 24px rgba(0,0,0,.4);opacity:0;transition:opacity .3s;pointer-events:none}
 .bildirim.acik{opacity:1}
 .son{text-align:center;color:var(--soluk);font-size:14px;padding-block:40px 10px;max-width:620px;margin:0 auto}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
@@ -72,12 +83,14 @@ h2{font:400 40px/1.1 var(--el);margin:0 0 4px;text-align:center;text-wrap:balanc
 <header class="ust">
   <h1>İrem <span class="amp">&amp;</span> Atilla</h1>
   <div class="k">Nişan davetiyesi · seçenekler</div>
-  <p>Sevgili İrem, hazırladığımız seçenekler aşağıda. Beğendiklerinin kalbine dokunman yeterli (istediğin kadar seçebilirsin); seçimlerin bize kendiliğinden ulaşır. Görsele dokununca büyür.</p>
+  <p>Sevgili İrem, hazırladığımız seçenekler aşağıda. Beğendiklerinin kalbine dokun (istediğin kadar seçebilirsin). Bitince alttaki “Seçimlerim” düğmesine bas, açılan ekranın ekran görüntüsünü alıp bize gönder. Görsele dokununca büyür.</p>
   <div class="ayrac"></div>
 </header>
 <main id="ana"></main>
-<form name="secimler" data-netlify="true" netlify-honeypot="bot" hidden><input name="bot"><input name="ziyaretci"><input name="secimler"><input name="adet"></form>
 <div class="bildirim" id="bildirim" aria-live="polite"></div>
+<div class="cubuk"><button id="gb" type="button" disabled>Beğendiklerini seç</button></div>
+<div class="ozet" id="ozet" hidden><div class="ozet-ic"><button class="kapat" id="ok" type="button" aria-label="Kapat">×</button>
+  <h3>İrem'in seçimleri</h3><div class="ozet-izgara" id="oi"></div><p class="ozet-not">Bu ekranın ekran görüntüsünü alıp gönderebilirsin.</p></div></div>
 <div class="son">Metinlerdeki saat şimdilik yer tutucu; son hâli seçimine göre netleşecek.</div>
 <div class="perde" id="perde" hidden><button class="kapat" id="pk" type="button" aria-label="Kapat">×</button><div class="ic" id="pi"></div></div>
 <script>
@@ -104,14 +117,16 @@ const perde=document.getElementById('perde'),pi=document.getElementById('pi');
 function ac(k){pi.innerHTML=k.video?`<video autoplay muted loop playsinline controls poster="${k.poster}" src="${k.video}"></video>`:`<img alt="${esc(k.ad)}" src="${k.resim}">`;perde.hidden=false;document.getElementById('pk').focus();}
 const kapat=()=>{perde.hidden=true;pi.innerHTML='';};
 document.getElementById('pk').onclick=kapat;perde.onclick=e=>{if(e.target===perde||e.target===pi)kapat();};
-addEventListener('keydown',e=>{if(e.key==='Escape')kapat();});
-let zid='';try{zid=localStorage.getItem('irem-zid')||'';if(!zid){zid=Math.random().toString(36).slice(2,10);localStorage.setItem('irem-zid',zid);}}catch(e){zid=Math.random().toString(36).slice(2,10);}
+addEventListener('keydown',e=>{if(e.key==='Escape'){kapat();oz.hidden=true;}});
 const bil=document.getElementById('bildirim');let bt=null;
-function bildir(t){bil.textContent=t;bil.classList.add('acik');clearTimeout(bt);bt=setTimeout(()=>bil.classList.remove('acik'),1800);}
-let gt=null;
-function guncelle(){}
-function gonder(){clearTimeout(gt);gt=setTimeout(()=>{const l=[...secim].sort((a,b)=>a-b).filter(n=>tum[n]).map(n=>`No. ${n} · ${tum[n].ad}`);
-  const v=new URLSearchParams({'form-name':'secimler',ziyaretci:zid,adet:String(l.length),secimler:l.join('\n')||'(boş)'});
-  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:v.toString()}).catch(()=>{});},1200);}
+function bildir(t){bil.textContent=t;bil.classList.add('acik');clearTimeout(bt);bt=setTimeout(()=>bil.classList.remove('acik'),1600);}
+const gb=document.getElementById('gb'),oz=document.getElementById('ozet'),oi=document.getElementById('oi');
+function guncelle(){const n=secim.size;gb.disabled=!n;gb.textContent=n?`Seçimlerim (${n})`:'Beğendiklerini seç';}
+function gonder(){guncelle();}
+gb.onclick=()=>{const l=[...secim].sort((a,b)=>a-b).filter(n=>tum[n]);
+  oi.innerHTML=l.map(n=>{const k=tum[n];return `<div class="ozet-kart"><img alt="" src="${k.resim||k.poster}"><div><b>No. ${n}</b><br>${esc(k.ad)}</div></div>`;}).join('');
+  oz.hidden=false;oz.scrollTop=0;};
+document.getElementById('ok').onclick=()=>{oz.hidden=true;};
+guncelle();
 </script>
 </body></html>
